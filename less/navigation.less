@@ -1,1 +1,56 @@
-// Navigation Styles here
+header {
+    height: 4.2rem;
+    display: flex;
+    border: 1px solid red;
+
+    
+}
+
+@media @hideDesktopNav {
+    .desktopHeader {
+        display: none;
+    }
+}
+
+// nav {                      --------------save for desktop width
+//     display: flex;
+//     align-items: flex-end;
+//     flex-direction: column;
+//     height: 100%;
+//     width: 50%;
+//     background: @secondary-color;
+    
+//     a {
+//         color: white;
+//         text-decoration: none;
+//     }
+// }
+
+//-----------MOBILE HEADER---------------//
+
+nav {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background: @secondary-color;
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.navH2 {
+    width: 50%;
+    padding: .9rem 1rem;
+    align-self: center;
+    color: white;
+    background: @secondary-color;
+    font-size: 2.2rem;
+}
+
+
+//-------------DESKTOP HEADER----------------//
+

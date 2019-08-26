@@ -167,6 +167,37 @@ img {
 }
 .container {
   max-width: 1440px;
+  min-width: 500px;
   width: 100%;
   margin: 0 auto;
+}
+header {
+  height: 4.2rem;
+  display: flex;
+  border: 1px solid red;
+}
+@media (max-width: 999px) {
+  .desktopHeader {
+    display: none;
+  }
+}
+nav {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  background: #1A3642;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.navH2 {
+  width: 50%;
+  padding: 0.9rem 1rem;
+  align-self: center;
+  color: white;
+  background: #1A3642;
+  font-size: 2.2rem;
 }
