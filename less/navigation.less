@@ -6,32 +6,10 @@ header {
     
 }
 
-@media @hideDesktopNav {
-    .desktopHeader {
-        display: none;
-    }
-}
-
-// nav {                      --------------save for desktop width
-//     display: flex;
-//     align-items: flex-end;
-//     flex-direction: column;
-//     height: 100%;
-//     width: 50%;
-//     background: @secondary-color;
-    
-//     a {
-//         color: white;
-//         text-decoration: none;
-//     }
-// }
-
-//-----------MOBILE HEADER---------------//
-
 nav {
     display: flex;
-    align-items: flex-end;
-    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     height: 100%;
     width: 50%;
     background: @secondary-color;
@@ -39,18 +17,28 @@ nav {
     a {
         color: white;
         text-decoration: none;
+        margin: 0 1.3rem;
+        font-size: 1.4rem;
+
+        &:last-child{
+            margin-right: 2rem;
+        }
+
+        // &:hover{
+        //     color: @primary-color;
+        // }
     }
 }
 
 .navH2 {
+    font-weight: bold;
     width: 50%;
+    height: 100%;
     padding: .9rem 1rem;
     align-self: center;
     color: white;
     background: @secondary-color;
-    font-size: 2.2rem;
+    font-size: 2.25rem;
+    font-weight: 600;
 }
-
-
-//-------------DESKTOP HEADER----------------//
 

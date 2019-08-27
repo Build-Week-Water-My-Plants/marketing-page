@@ -167,7 +167,6 @@ img {
 }
 .container {
   max-width: 1440px;
-  min-width: 500px;
   width: 100%;
   margin: 0 auto;
 }
@@ -176,15 +175,10 @@ header {
   display: flex;
   border: 1px solid red;
 }
-@media (max-width: 999px) {
-  .desktopHeader {
-    display: none;
-  }
-}
 nav {
   display: flex;
-  align-items: flex-end;
-  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   height: 100%;
   width: 50%;
   background: #1A3642;
@@ -192,12 +186,31 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
+  margin: 0 1.3rem;
+  font-size: 1.4rem;
+}
+nav a:last-child {
+  margin-right: 2rem;
 }
 .navH2 {
+  font-weight: bold;
   width: 50%;
+  height: 100%;
   padding: 0.9rem 1rem;
   align-self: center;
   color: white;
   background: #1A3642;
-  font-size: 2.2rem;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+footer {
+  height: 4.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1A3642;
+}
+footer p {
+  color: white;
+  padding: 0;
 }
