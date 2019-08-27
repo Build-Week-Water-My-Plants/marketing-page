@@ -21,8 +21,8 @@
             flex-direction: column;
             justify-content: center;
             text-align: center;
-            border: 1px solid red;
-            margin-right: 10%;
+            // border: 1px solid red;
+            margin-right: 7%;
             width: 405;
             h1 {
                 font-size: 7.2rem;
@@ -38,7 +38,7 @@
         }//end hero-text
 
         img {
-            border: 1px solid green;
+            // border: 1px solid green;
             width: 32%;
         }
     }//end hero-text-and-image
@@ -57,7 +57,7 @@
         color: @primary-color;
         font-size: 2.2rem;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
-        width: 12%;
+        width: 166px;
         border-radius: 10px;
 
         &:hover{
@@ -69,7 +69,7 @@
 
     p {
         font-size: 1.4rem;
-        margin-top: 3px;
+        margin-top: 5px;
 
         a {
             text-decoration: none;
@@ -79,7 +79,7 @@
 
     @media @desktop {
         .hero-text-and-image{
-            .hero-text {;
+            .hero-text {
                 border: 1px solid red;
                 margin: 0;
                 margin-right: 5%;
@@ -97,12 +97,12 @@
                 }
             }//end hero-text
             img {
-                border: 1px solid red;
+                // border: 1px solid red;
             }
         }
 
         .btn {
-            width: 15%;
+            width: 166px;;
         }
     }
 
@@ -142,45 +142,47 @@
     }//end mobile media query
 }
 
-    // @media @phone {
 
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
 
-    //     .hero-text-and-image {
-    //         display: flex;
-    //         flex-direction: column;
-    //         align-items: center;
-    //     }
+// <------- Tolu's Landing Page code goes here ----->
+//cards less here
+.words{
+    .flex();
+    // border:2px solid red;
+    
 
-        // h1 {
-        //     font-size: 2.2rem;
-        // }
+    .text{
+        margin:0 0.5rem;
 
-        // h2 {
-        //     margin-top:10px;
-        // }
-        // img {
-        //     margin-top: 10px;
-        //     width: 45%;
-        //     justify-content: center;
-        // }
+        h2{
+            text-align: center;
+            color: @primary-color;
+        }
 
-        // .btn {
-        //     margin-top: 13
-        //     .custom-btn(@width: 27%, @height: 50px, @background-color: @primary-color, @font-color: #ffffff);
-        // }
+        p{
+            text-align: center;
+            color: @secondary-color;
+            font-size:2.4rem;
 
-        // p {
-        //     margin-top: 5px;
-        //     font-size: 1.2rem;
-        // }
+            @media @tablet{
+                font-size:1.9rem;
+            }
+        }
 
-        // p a {
-        //     text-decoration: none;
-        //     color: #32708B;
-        // }
+    }
 
-        // margin-top: 50px;
-        // margin-bottom: 155px;
+}
+.images{
+    .flex();
+    // border:2px solid red;
+   
+    .images1{
+        max-width:100%;
+    }
+    .images2{
+        max-width: 100%;
+    }
+    .images3{
+        max-width:100%;
+    }
+}
