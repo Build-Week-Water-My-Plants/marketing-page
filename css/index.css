@@ -198,7 +198,8 @@ nav a:last-child {
 }
 @media (max-width: 500px) {
   nav a {
-    font-size: 1.375rem;
+    font-size: 1.22rem;
+    margin: 0 0.7rem;
   }
 }
 .navH2 {
@@ -210,6 +211,7 @@ nav a:last-child {
   color: white;
   background: #1A3642;
   font-size: 2.25rem;
+  text-decoration: none;
 }
 footer {
   height: 4.2rem;
@@ -220,9 +222,19 @@ footer {
   width: 100%;
   max-width: 1440px;
 }
+@media (max-width: 500px) {
+  footer {
+    height: 3rem;
+  }
+}
 footer p {
   color: white;
   padding: 0;
+}
+@media (max-width: 500px) {
+  footer p {
+    font-size: 1.2rem;
+  }
 }
 .hero {
   display: flex;

@@ -2,6 +2,12 @@
 
 <html lang="en">
 <head>
+    <!--allows for a smooth scroll when "learn more" CTA button is clicked -->
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+    </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -24,9 +30,9 @@
       <!-- Lens's Nav Goes Below this line -->
       <h2 class="navH2">Water my Plants</h2>
       <nav>
+          <a class="about" href="about-us.html">About Us</a>
           <a class="signIn" href="#">Sign In</a>
           <a class="signUp" href="#">Sign Up</a>
-          <a class="about" href="#">About Us</a>
       </nav>
     </header>
 
@@ -40,16 +46,16 @@
             </div>
             <img class="hero-img" src="image/Hero.png" alt="Hero Image">
         </div>
-        <a href="#" class="btn"> Learn More </a>
+        <a href="#card-section" class="btn"> Learn More </a>
         <p>Have an account? <a href ="#" class ="sign-in-btn">Sign In</a></p>
       </section>
 
     <!-- Tolu's Code Goes Below this line -->
-    <section>
+    <section id = "card-section">
       <div class="words">
           <div class="text 1">
               <h2>Schedule</h2>
-              <p>your watering times and recieve text notifications!</p>
+              <p>your watering times and receive text notifications!</p>
           </div>
           <div class="text 2">
               <h2>Weather</h2>

@@ -1,5 +1,4 @@
 footer {
-    // display: none;
     height: 4.2rem;
     display: flex;
     justify-content: center;
@@ -8,9 +7,17 @@ footer {
     width: 100%;
     max-width: 1440px;
 
+    @media @phone {
+        height: 3rem;
+    }
+
 
     p{
         color: white;
         padding: 0;
+
+        @media @phone {
+            font-size: 1.2rem;
+        }
     }
 }
