@@ -234,7 +234,45 @@ img {
   color: #32708B;
 }
 @media (max-width: 500px) {
+  .hero {
+    margin-top: 2.5%;
+  }
   .hero .hero-text-and-image {
     flex-direction: column;
+    align-items: center;
+  }
+  .hero .hero-text-and-image .hero-text h1 {
+    font-size: 3.6rem;
+    font-weight: bold;
+    line-height: 3rem;
+  }
+  .hero .hero-text-and-image .hero-text h2 {
+    font-size: 3.6rem;
+    color: #1A3642;
+    line-height: 4rem;
+    margin-top: 2.5%;
+  }
+  .hero .hero-text-and-image img {
+    margin-top: 2.5%;
+    width: 45%;
+  }
+  .hero .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #FE0760;
+    height: 50px;
+    width: 27%;
+    font-size: 1.8rem;
+    border-radius: 7px;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  .hero .btn:hover {
+    background-color: #ffffff;
+    color: #FE0760;
+    border: solid #FE0760 1px;
+    cursor: pointer;
   }
 }

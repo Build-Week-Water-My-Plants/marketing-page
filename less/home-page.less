@@ -78,10 +78,39 @@
     }
 
     @media @phone {
+
+        margin-top: 2.5%;
+        
         .hero-text-and-image {
             flex-direction: column;
+            align-items: center;
+
+            .hero-text {
+                
+                h1 {
+                    font-size: 3.6rem;
+                    font-weight: bold;
+                    line-height: 3rem;
+                }
+                h2 {
+                    font-size: 3.6rem;
+                    color: @secondary-color;
+                    line-height: 4rem;
+                    margin-top:2.5%;
+                }
+            }//end hero-text
+
+            img {
+                margin-top: 2.5%;
+                width: 45%;
+            }
+        }//end hero-text-and-image
+
+        .btn {
+            .custom-btn(@width: 27%, @height: 50px, @background-color: @primary-color, @font-color: #ffffff);
         }
-    }
+    }//end mobile media query
+}
 
     // @media @phone {
 
@@ -95,37 +124,33 @@
     //         align-items: center;
     //     }
 
-    //     h1 {
-    //         // font-size: 2.2rem;
-    //     }
+        // h1 {
+        //     font-size: 2.2rem;
+        // }
 
-    //     h2 {
-    //         margin-top:10px;
-    //     }
-    //     img {
-    //         margin-top: 10px;
-    //         width: 45%;
-    //         justify-content: center;
-    //     }
+        // h2 {
+        //     margin-top:10px;
+        // }
+        // img {
+        //     margin-top: 10px;
+        //     width: 45%;
+        //     justify-content: center;
+        // }
 
-    //     .btn {
-    //         margin-top: 13
-    //         .custom-btn(@width: 27%, @height: 50px, @background-color: @primary-color, @font-color: #ffffff);
-    //     }
+        // .btn {
+        //     margin-top: 13
+        //     .custom-btn(@width: 27%, @height: 50px, @background-color: @primary-color, @font-color: #ffffff);
+        // }
 
-    //     p {
-    //         margin-top: 5px;
-    //         font-size: 1.2rem;
-    //     }
+        // p {
+        //     margin-top: 5px;
+        //     font-size: 1.2rem;
+        // }
 
-    //     p a {
-    //         text-decoration: none;
-    //         color: #32708B;
-    //     }
+        // p a {
+        //     text-decoration: none;
+        //     color: #32708B;
+        // }
 
-    //     margin-top: 50px;
-    //     margin-bottom: 155px;
-
-    // }
-    
-}//end hero
+        // margin-top: 50px;
+        // margin-bottom: 155px;
