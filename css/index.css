@@ -1,6 +1,7 @@
 .flex {
   flex: 0 0 86%;
   display: flex;
+  align-items: flex-end;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -170,7 +171,7 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1440px;
+  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
@@ -195,10 +196,12 @@ nav a {
 }
 nav a:last-child {
   margin-right: 2rem;
+  color: #FE0760;
 }
 @media (max-width: 500px) {
   nav a {
-    font-size: 1.375rem;
+    font-size: 1.4rem;
+    margin: 0 0.7rem;
   }
 }
 .navH2 {
@@ -210,8 +213,10 @@ nav a:last-child {
   color: white;
   background: #1A3642;
   font-size: 2.25rem;
+  text-decoration: none;
 }
 footer {
+  border: 1px solid red;
   height: 4.2rem;
   display: flex;
   justify-content: center;
@@ -220,9 +225,19 @@ footer {
   width: 100%;
   max-width: 1440px;
 }
+@media (max-width: 500px) {
+  footer {
+    height: 3rem;
+  }
+}
 footer p {
   color: white;
   padding: 0;
+}
+@media (max-width: 500px) {
+  footer p {
+    font-size: 1.2rem;
+  }
 }
 .hero {
   display: flex;
@@ -289,7 +304,6 @@ footer p {
 }
 @media (max-width: 1000px) {
   .hero .hero-text-and-image .hero-text {
-    border: 1px solid red;
     margin: 0;
     margin-right: 5%;
   }
@@ -297,7 +311,6 @@ footer p {
     font-size: 5rem;
     font-weight: bold;
     line-height: 3rem;
-    border: 1px solid blue;
   }
   .hero .hero-text-and-image .hero-text h2 {
     font-size: 5rem;
@@ -307,6 +320,15 @@ footer p {
   }
   .hero .btn {
     width: 166px;
+  }
+}
+@media (max-width: 724px) {
+  .hero {
+    margin-top: 3%;
+  }
+  .hero .hero-text-and-image {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 500px) {
@@ -358,13 +380,16 @@ footer p {
 .words {
   flex: 0 0 86%;
   display: flex;
+  align-items: flex-end;
+  border: 2px solid blue;
 }
 .words .text {
-  margin: 0 0.5rem;
+  margin-right: 3.5rem;
 }
 .words .text h2 {
   text-align: center;
   color: #FE0760;
+  font-size: 3rem;
 }
 .words .text p {
   text-align: center;
@@ -376,16 +401,12 @@ footer p {
     font-size: 1.9rem;
   }
 }
-.images {
-  flex: 0 0 86%;
+.words .text .images {
   display: flex;
+  border: 2px solid red;
+  align-items: flex-end;
+  height: 27rem;
 }
-.images .images1 {
-  max-width: 100%;
-}
-.images .images2 {
-  max-width: 100%;
-}
-.images .images3 {
-  max-width: 100%;
+.about-container {
+  width: 98%;
 }
