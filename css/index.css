@@ -236,10 +236,14 @@ img {
 @media (max-width: 500px) {
   .hero {
     margin-top: 2.5%;
+    border: 1px solid blue;
   }
   .hero .hero-text-and-image {
     flex-direction: column;
     align-items: center;
+  }
+  .hero .hero-text-and-image .hero-text {
+    margin: 0;
   }
   .hero .hero-text-and-image .hero-text h1 {
     font-size: 3.6rem;
