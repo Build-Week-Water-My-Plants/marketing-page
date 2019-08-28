@@ -405,11 +405,13 @@ footer p {
 @media (max-width: 991px) {
   .words .card p {
     font-size: 2.4rem;
+    word-wrap: break-word;
   }
 }
-@media (max-width:547px) {
+@media (max-width:564px) {
   .words .card p {
     font-size: 2rem;
+    word-wrap: break-word;
   }
 }
 .words .images1 {
@@ -419,7 +421,18 @@ footer p {
 }
 @media (max-width: 991px) {
   .words .images1 {
-    margin-left: 4rem;
+    margin-left: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .words .images1 {
+    margin-left: 1rem;
+  }
+}
+@media (max-width:486px) {
+  .words .images1 {
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 }
 .words .images2 {
@@ -429,12 +442,23 @@ footer p {
 }
 @media (max-width: 991px) {
   .words .images2 {
-    margin-left: 9rem;
+    margin-left: 11rem;
   }
 }
-@media (max-width:547px) {
+@media (max-width:564px) {
   .words .images2 {
-    margin-left: 4rem;
+    margin-left: 6rem;
+  }
+}
+@media (max-width: 500px) {
+  .words .images2 {
+    margin-left: 3rem;
+  }
+}
+@media (max-width:486px) {
+  .words .images2 {
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 }
 .words .images3 {
@@ -446,9 +470,20 @@ footer p {
     margin-left: 9rem;
   }
 }
-@media (max-width:547px) {
+@media (max-width:564px) {
   .words .images3 {
-    margin-left: 6rem;
+    margin-left: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .words .images3 {
+    margin-left: 3rem;
+  }
+}
+@media (max-width:486px) {
+  .words .images3 {
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 }
 .startbtn {
@@ -500,7 +535,7 @@ footer p {
     color: #FE0760;
   }
   .Vbtn button .fa-angle-down {
-    font-size: 6rem;
+    font-size: 7rem;
   }
 }
 .about-container {
