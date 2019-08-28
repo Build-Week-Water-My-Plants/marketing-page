@@ -155,40 +155,60 @@
 // <------- Tolu's Landing Page code goes here ----->
 //cards less here
 .words{
-    border:2px solid red;
+    // border:2px solid red;
     .flex();
-   
-    
+    @media @tablet{
+        flex-direction:column;
+        // justify-content: space-between;
+        align-items: center;
+        
+    }
   .card{
-      border:2px solid blue;
-
+    //   border:2px solid blue;
+    @media @tablet{
+        flex-direction:column;
+        // justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+      
       h2{
           text-align: center;
       }
       p{
         text-align: center;
-        font-weight:bold;
-         
+        font-weight:bold;   
+        @media @tablet{
+            font-size:2.4rem;
+        }
       }
   }  
-
   .images1{
+    //   border:2px solid red;
     padding-right: 1rem;
     margin-right:1rem;
-    padding-top:2.2rem;
-    
+    padding-top:2.2rem;  
+    @media @tablet{
+        margin-left: 4rem;
+    } 
 }
 .images2{
     margin-right:2rem;
     padding-top:2.2rem;
     padding-right: 1rem;
+    @media @tablet{
+        margin-left: 9rem;
+    } 
+    
 }
 .images3{
     margin-right:1rem;
-    padding-top:2rem;
+    padding-top:2rem; 
     
+    @media @tablet{
+        margin-left: 9rem;
+    } 
 }
-
 }
 
 .startbtn{
@@ -197,7 +217,6 @@
     // border:2px solid red;
     margin-top:2rem;
     margin-bottom:10rem;
-
     button{
         height:6rem;
         width:16rem;  
@@ -205,41 +224,11 @@
         text-decoration: none;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
         .paraSignBtn(@btn-bg-color,@btnFontSize,@button-font-color);
-    
-
     &:hover{
         background-color:lighten(@button-font-color,10%);
         transition: 0.7s ease-in-out;
         color:@primary-color;
-    }}
-            
-    
+    }} 
 }
  
-
-
-
-// .btn {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     height: 60px;
-//     border: 4px solid @primary-color;
-//     font-size: 1.8rem;
-//     border-radius: 7px;
-//     text-decoration: none;
-//     color: @primary-color;
-//     font-size: 2.2rem;
-//     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
-//     width: 166px;
-//     border-radius: 10px;
-
-//     &:hover{
-//         background-color: @primary-color;
-//         color: white;
-//     }
-    
-// }
-    
-
 
