@@ -181,6 +181,10 @@
         @media @tablet{
             font-size:2.4rem;
         }
+
+        @media @phone2{
+            font-size:2rem;
+        }
       }
   }  
   .images1{
@@ -200,6 +204,10 @@
         margin-left: 9rem;
     } 
     
+    @media @phone2{
+        margin-left:4rem;
+    }
+    
 }
 .images3{
     margin-right:1rem;
@@ -208,6 +216,10 @@
     @media @tablet{
         margin-left: 9rem;
     } 
+
+    @media @phone2{
+        margin-left:6rem;
+    }
 }
 }
 
@@ -229,6 +241,35 @@
         transition: 0.7s ease-in-out;
         color:@primary-color;
     }} 
+}
+
+.Vbtn{
+
+    display:none;
+
+    @media @phone{
+    display:flex;
+    justify-content: center;
+    // border:2px solid red;
+    margin-top:2rem;
+    margin-bottom:10rem;
+    button{
+        height:6rem;
+        width:16rem;  
+        border-radius: 1rem;
+        text-decoration: none;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
+        .paraSignBtn(@btn-bg-color,@btnFontSize,@button-font-color);
+    &:hover{
+        background-color:lighten(@button-font-color,10%);
+        transition: 0.7s ease-in-out;
+        color:@primary-color;
+    }
+    .fa-angle-down{
+        font-size:6rem;
+    }
+} 
+}
 }
  
 
