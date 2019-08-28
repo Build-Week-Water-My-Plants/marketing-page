@@ -181,22 +181,27 @@ img {
   margin-bottom: 4rem;
 }
 header {
-  height: 4.2rem;
+  height: 7.1rem;
   display: flex;
 }
+@media (max-width: 500px) {
+  header {
+    height: 4.2rem;
+  }
+}
 nav {
+  height: 100%;
+  width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 100%;
-  width: 50%;
   background: #1A3642;
 }
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 1.3rem;
-  font-size: 1.5rem;
+  margin: 0 1.8rem;
+  font-size: 2.2rem;
   font-weight: 600;
 }
 nav a:last-child {
@@ -204,24 +209,43 @@ nav a:last-child {
   color: #FE0760;
 }
 @media (max-width: 500px) {
+  nav a:last-child {
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 500px) {
   nav a {
     font-size: 1.4rem;
     margin: 0 0.7rem;
   }
 }
-.navH2 {
+.logo {
   font-weight: bold;
   width: 50%;
   height: 100%;
-  padding: 0.9rem 3.5rem;
+  padding: 1.8rem 3.5rem;
   align-self: center;
   color: white;
   background: #1A3642;
-  font-size: 2.25rem;
+  font-size: 3.6rem;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  .logo {
+    padding-left: 1rem;
+    padding-bottom: 1.8rem;
+    font-size: 2.2rem;
+    width: 50%;
+    height: 100%;
+    align-self: center;
+    color: white;
+    background: #1A3642;
+    font-size: 2.25rem;
+    text-decoration: none;
+  }
+}
 footer {
-  height: 4.2rem;
+  height: 6.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,6 +260,7 @@ footer {
 footer p {
   color: white;
   padding: 0;
+  font-size: 2.5rem;
 }
 @media (max-width: 500px) {
   footer p {
@@ -515,9 +540,22 @@ footer p {
   margin: 2% auto;
   flex-wrap: wrap;
   align-content: space-around;
+  justify-content: center;
   width: 70%;
 }
 .bioCard {
+  position: relative;
   width: 22%;
   margin-left: 3%;
+}
+.bioCard h3 {
+  font-size: 1.7rem;
+}
+.bio {
+  text-align: center;
+  text-justify: center;
+  position: absolute;
+  width: 100%;
+  top: 70%;
+  border: 1px solid red;
 }
