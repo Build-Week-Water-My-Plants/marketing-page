@@ -155,17 +155,32 @@
 // <------- Tolu's Landing Page code goes here ----->
 //cards less here
 
+
+@media @phone{
+    .empty2{
+        display:none;
+    }
+}
 .words{
     .flex();
     // border:2px solid blue;
+  
     @media @phone{
         flex-direction: column;
+        .empty{
+            border: 20px solid #B4D6E4;
+            width: 100%;
+            margin-bottom:4rem;
+        }   
     }
 
     .text{
         margin:0 0.5rem;
+        // border:2px solid green;
         @media @phone{
-            margin: 0px 11.5rem;
+            margin: 0 auto;
+          
+            
         }
         
         h2{
@@ -188,9 +203,79 @@
             // border:2px solid red;
             // align-items: flex-end;
             height:27rem;
+            width:98%;
+            margin:0 auto;
+           
         }
 
     }
+    // .text2{
+    //     margin:0 0.5rem;
+    //     @media @phone{
+    //         margin: 0px 11.5rem;
+          
+            
+    //     }
+        
+    //     h2{
+    //         text-align: center;
+    //         color: @primary-color;
+    //     }
+
+    //     p{
+    //         text-align: center;
+    //         color: @secondary-color;
+    //         font-size:2.4rem;
+
+    //         @media @tablet{
+    //             font-size:1.9rem;
+    //         }
+    //     }
+
+    //     .images{
+    //         display: flex;
+    //         // border:2px solid red;
+    //         // align-items: flex-end;
+    //         height:27rem;
+           
+    //     }
+
+    // }
+    // .text3{
+    //     margin:0 0.5rem;
+    //     @media @phone{
+    //         margin: 0px 11.5rem;
+          
+            
+    //     }
+        
+    //     h2{
+    //         text-align: center;
+    //         color: @primary-color;
+    //     }
+
+    //     p{
+    //         text-align: center;
+    //         color: @secondary-color;
+    //         font-size:2.4rem;
+
+    //         @media @tablet{
+    //             font-size:1.9rem;
+    //         }
+    //     }
+
+    //     .images{
+    //         display: flex;
+    //         // border:2px solid red;
+    //         // align-items: flex-end;
+    //         height:27rem;
+           
+    //     }
+
+    // }
+    
+    
+    
 
 }
 
