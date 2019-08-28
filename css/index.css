@@ -410,18 +410,24 @@ footer p {
 .startbtn {
   display: flex;
   justify-content: center;
-  border: 2px solid red;
   margin-top: 2rem;
   margin-bottom: 10rem;
 }
 .startbtn button {
-  color: #FE0760;
-  background-color: black;
   height: 6rem;
   width: 16rem;
-  font-size: 1.8rem;
   border-radius: 1rem;
   text-decoration: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  background-color: #FE0760;
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+}
+.startbtn button:hover {
+  background-color: #ffffff;
+  transition: 0.7s ease-in-out;
+  color: #FE0760;
 }
 .about-container {
   width: 98%;
