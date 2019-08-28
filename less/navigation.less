@@ -2,23 +2,23 @@ header {
     height: 7.1rem;
     display: flex;
 
-    @media @phone {
+    @media @500to800 {
         height: 4.2rem;
     }
-}
+} // header ends
 
 nav {
     height: 100%;
     width: 50%;
+    background: @secondary-color;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background: @secondary-color;
     
     a {
+        margin: 0 2.5rem;
         color: white;
         text-decoration: none;
-        margin: 0 1.8rem;
         font-size: 2.2rem;
         font-weight: 600;
 
@@ -26,39 +26,32 @@ nav {
             margin-right: 4rem;
             color: @primary-color;
 
-            @media @phone {
+            @media @500to800 {
                 margin-right: 2rem;
             }
         }
 
-        @media @phone {
+        @media @500to800 {
             font-size: 1.4rem;
             margin: 0 .7rem;
         }
-    }
-}
+    }  // a selector ends
+} // nav ends
 
 .logo {
-    font-weight: bold;
     width: 50%;
     height: 100%;
     padding: 1.8rem 3.5rem;
     align-self: center;
     color: white;
-    background: @secondary-color;
     font-size: 3.6rem;
+    font-weight: bold;
+    background: @secondary-color;
     text-decoration: none;
 
-    @media @phone {
+    @media @500to800 {
+        padding-top: 1rem;;
         padding-left: 1rem;
-        padding-bottom: 1.8rem;
         font-size: 2.2rem;
-        width: 50%;
-        height: 100%;
-        align-self: center;
-        color: white;
-        background: @secondary-color;
-        font-size: 2.25rem;
-        text-decoration: none;
     }
-}
+} // logo ends

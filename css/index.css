@@ -184,7 +184,7 @@ header {
   height: 7.1rem;
   display: flex;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) and (max-width:800px) {
   header {
     height: 4.2rem;
   }
@@ -192,15 +192,15 @@ header {
 nav {
   height: 100%;
   width: 50%;
+  background: #1A3642;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background: #1A3642;
 }
 nav a {
+  margin: 0 2.5rem;
   color: white;
   text-decoration: none;
-  margin: 0 1.8rem;
   font-size: 2.2rem;
   font-weight: 600;
 }
@@ -208,40 +208,33 @@ nav a:last-child {
   margin-right: 4rem;
   color: #FE0760;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) and (max-width:800px) {
   nav a:last-child {
     margin-right: 2rem;
   }
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) and (max-width:800px) {
   nav a {
     font-size: 1.4rem;
     margin: 0 0.7rem;
   }
 }
 .logo {
-  font-weight: bold;
   width: 50%;
   height: 100%;
   padding: 1.8rem 3.5rem;
   align-self: center;
   color: white;
-  background: #1A3642;
   font-size: 3.6rem;
+  font-weight: bold;
+  background: #1A3642;
   text-decoration: none;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) and (max-width:800px) {
   .logo {
+    padding-top: 1rem;
     padding-left: 1rem;
-    padding-bottom: 1.8rem;
     font-size: 2.2rem;
-    width: 50%;
-    height: 100%;
-    align-self: center;
-    color: white;
-    background: #1A3642;
-    font-size: 2.25rem;
-    text-decoration: none;
   }
 }
 footer {
@@ -252,9 +245,9 @@ footer {
   background: #1A3642;
   width: 100%;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) and (max-width:800px) {
   footer {
-    height: 3rem;
+    height: 3.65rem;
   }
 }
 footer p {
@@ -262,9 +255,9 @@ footer p {
   padding: 0;
   font-size: 2.5rem;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) and (max-width:800px) {
   footer p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 .footerDiv {
@@ -429,8 +422,27 @@ footer p {
     margin-bottom: 4rem;
   }
 }
+@media (max-width: 991px) {
+  .words {
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 490px;
+  }
+}
 .words .text {
   margin: 0 0.5rem;
+}
+@media (min-width:1200px) {
+  .words .text {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+  }
+}
+.words .text img {
+  max-width: 100%;
+  height: auto;
 }
 @media (max-width: 500px) {
   .words .text {
@@ -441,14 +453,26 @@ footer p {
   text-align: center;
   color: #FE0760;
 }
+@media (max-width: 991px) {
+  .words .text h2 {
+    font-size: 4.8rem;
+  }
+}
 .words .text p {
   text-align: center;
   color: #1A3642;
   font-size: 2.4rem;
 }
-@media (max-width: 800px) {
+@media (min-width:1200px) {
   .words .text p {
-    font-size: 1.9rem;
+    width: 400px;
+    margin: 0 auto;
+    padding: 15px 20px;
+  }
+}
+@media (max-width: 991px) {
+  .words .text p {
+    font-size: 2.9rem;
   }
 }
 .words .text .images {
@@ -457,6 +481,18 @@ footer p {
   width: 98%;
   margin: 0 auto;
 }
+@media (min-width:1200px) {
+  .words .text .images {
+    max-width: 410px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 991px) {
+  .words .text {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
+}
 .startbtn {
   display: flex;
   justify-content: center;
@@ -464,8 +500,8 @@ footer p {
   margin-bottom: 10rem;
 }
 .startbtn button {
-  height: 6rem;
-  width: 16rem;
+  height: 6.1rem;
+  width: 16.6rem;
   border-radius: 1rem;
   text-decoration: none;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -491,9 +527,9 @@ footer p {
     margin-bottom: 10rem;
   }
   .Vbtn button {
-    height: 4.4rem;
-    width: 20rem;
-    border-radius: 1rem;
+    height: 4.3rem;
+    width: 19.9rem;
+    border-radius: 0.9rem;
     text-decoration: none;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     background-color: #FE0760;
@@ -515,6 +551,12 @@ footer p {
   display: flex;
   align-content: space-around;
 }
+@media (max-width: 500px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .about-description {
   border-right: 2px solid #FE0760;
   display: flex;
@@ -535,6 +577,15 @@ footer p {
   width: 85%;
   margin-top: 15px;
 }
+@media (max-width: 500px) {
+  .about-description {
+    width: 98%;
+    border-right: none;
+    border-bottom: 2px solid #FE0760;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+  }
+}
 .bioContainer {
   display: flex;
   margin: 2% auto;
@@ -543,19 +594,58 @@ footer p {
   justify-content: center;
   width: 70%;
 }
+@media (max-width: 500px) {
+  .bioContainer {
+    flex-direction: column;
+    width: 98%;
+  }
+}
 .bioCard {
   position: relative;
   width: 22%;
   margin-left: 3%;
+  margin-bottom: 5%;
 }
 .bioCard h3 {
   font-size: 1.7rem;
 }
+@media (max-width: 500px) {
+  .bioCard {
+    width: 50%;
+    margin: 0 0 5% 3%;
+    justify-content: center;
+    border: 0.4px ridge #1A3642;
+    border-radius: 4.6%;
+  }
+  .bioCard h3 {
+    font-size: 3rem;
+  }
+  .bioCard p {
+    font-size: 2rem;
+  }
+}
 .bio {
   text-align: center;
-  text-justify: center;
+  justify-content: center;
   position: absolute;
   width: 100%;
   top: 70%;
-  border: 1px solid red;
+}
+@media (max-width: 500px) {
+  .bio {
+    width: 98%;
+  }
+}
+.bio a {
+  font-size: 2rem;
+  color: #FE0760;
+  text-decoration: none;
+}
+.bio a:hover {
+  color: #1A3642;
+}
+@media (max-width: 800px) {
+  .bio a {
+    font-size: 1.6rem;
+  }
 }

@@ -2,10 +2,16 @@
 
 .about-container{
     width: 99%;
-    // height: 130rem;
     display: flex;
     align-content: space-around;
     // border: 1px solid red;
+
+
+    @media @phone{
+        display:flex;
+        flex-direction: column;
+        
+    }
 
 }
 
@@ -15,7 +21,7 @@
     margin-left: 1%;
     flex-direction: column;
     align-items: center;
-    width:30%;
+    width: 30%;
     // border: 1px solid yellow;
     padding-top: 8%;
 
@@ -31,6 +37,15 @@
         margin-top:15px;
 
     }
+
+    @media @phone{
+        width:98%;
+        border-right: none;
+        border-bottom: 2px solid @primary-color;
+        margin-bottom: 5%;
+        padding-bottom: 5%;
+
+    }
 }
 
 .bioContainer{
@@ -42,27 +57,72 @@
     width: 70%;
     // height: 30%;
     // border: 1px solid blue;
+
+    @media @phone{
+        flex-direction: column;
+        width: 98%;
+    }
 }
 
 .bioCard{
     position: relative;
     width: 22%;
     margin-left: 3%;
+    margin-bottom: 5%;
 
     h3{
         font-size: 1.7rem;
-    }
-    // border: 1px solid green;
+    };
+
+    @media @phone{
+        width:50%;
+        margin:0 0 5% 3%;
+        justify-content: center;
+        border: .4px ridge @secondary-color;
+        border-radius: 4.6%;
+
+        h3{
+            font-size: 3rem;
+        };
+
+        p{
+            font-size: 2rem;
+        }
+        
+        
+    };
+
+    
+
 }
 
 .bio{
     text-align: center;
-    text-justify: center;
+    justify-content: center;
     position: absolute;
     width: 100%;
     top: 70%;
-    border: 1px solid red;
     
+    @media @phone{
+        width:98%;
+    };
+
+    // border: 1px solid red;
+    
+}
+ 
+.bio a{
+    font-size: 2rem;
+    color: @primary-color;
+    text-decoration: none;
+
+    &:hover{
+        color: @secondary-color;
+    }
+
+    @media @tablet{
+        font-size: 1.6rem;
+    }
 }
 
 
