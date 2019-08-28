@@ -154,18 +154,38 @@
 
 // <------- Tolu's Landing Page code goes here ----->
 //cards less here
+
+
+@media @phone{
+    .empty2{
+        display:none;
+    }
+}
 .words{
     .flex();
-    border:2px solid blue;
-    
+    // border:2px solid blue;
+  
+    @media @phone{
+        flex-direction: column;
+        .empty{
+            border: 20px solid #B4D6E4;
+            width: 100%;
+            margin-bottom:4rem;
+        }   
+    }
 
     .text{
-        margin-right:3.5rem;
-
+        margin:0 0.5rem;
+        // border:2px solid green;
+        @media @phone{
+            margin: 0 auto;
+          
+            
+        }
+        
         h2{
             text-align: center;
             color: @primary-color;
-            font-size:3rem;
         }
 
         p{
@@ -180,13 +200,64 @@
 
         .images{
             display: flex;
-            border:2px solid red;
-            align-items: flex-end;
+            // border:2px solid red;
+            // align-items: flex-end;
             height:27rem;
+            width:98%;
+            margin:0 auto;  
         }
-        //yo i need you to pause so i can push and merge.
-        
     }
-    
-
 }
+
+
+.startbtn{
+    display:flex;
+    justify-content: center;
+    // border:2px solid red;
+    margin-top:2rem;
+    margin-bottom:10rem;
+    button{
+        height:6rem;
+        width:16rem;  
+        border-radius: 1rem;
+        text-decoration: none;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
+        .paraSignBtn(@btn-bg-color,@btnFontSize,@button-font-color);
+        cursor: pointer;
+        &:hover{
+        background-color:lighten(@button-font-color,10%);
+        transition: 0.7s ease-in-out;
+        color:@primary-color;
+    }} 
+}
+
+.Vbtn{
+
+    display:none;
+
+    @media @phone{
+    display:flex;
+    justify-content: center;
+    // border:2px solid red;
+    margin-top:2rem;
+    margin-bottom:10rem;
+    button{
+        height:6rem;
+        width:16rem;  
+        border-radius: 1rem;
+        text-decoration: none;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
+        .paraSignBtn(@btn-bg-color,@btnFontSize,@button-font-color);
+    &:hover{
+        background-color:lighten(@button-font-color,10%);
+        transition: 0.7s ease-in-out;
+        color:@primary-color;
+    }
+    .fa-angle-down{
+        font-size: 7rem;
+    }
+} 
+}
+}
+ 
+
