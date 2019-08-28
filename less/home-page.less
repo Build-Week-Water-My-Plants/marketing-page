@@ -155,8 +155,10 @@
 // <------- Tolu's Landing Page code goes here ----->
 //cards less here
 
+//cards less here
 
-//to uncomment
+
+//
 @media @phone{
     .empty2{
         display:none;
@@ -165,12 +167,10 @@
 
 .words{
     .flex();
-    // border:2px solid blue;
 
-    //to uncomment
+    //
     @media @phone{
         flex-direction: column;
-
         .empty{
             border: 20px solid #B4D6E4;
             width: 100%;
@@ -178,94 +178,82 @@
         }   
     }
 
-    //to uncomment
+    //
     @media @tablet2{
         // border:2px solid red;
         flex-direction: column;
         margin:0 auto;
         align-items: center;
-        max-width: 490px;
-        
+        max-width: 490px;    
     }
-
     .text{
         margin:0 0.5rem;
-        // border:2px solid green;
 
+        //
+        @media @phone{
+            margin: 0 auto;      
+        }
+
+        //
         @media @desktop2{
             width: calc(100% / 3);
             display: flex;
             flex-direction: column;
         }
-
-        //to uncomment, test first
         img{
             max-width: 100%;
             height: auto;   
         }
-
-        //to uncomment
-        @media @phone{
-            margin: 0 auto;      
-        }
-        
         h2{
             text-align: center;
             color: @primary-color;
 
-            //to uncomment
+            //
             @media @tablet2{
                 font-size:4.8rem;
             }
         }
-
         p{
+            //
             @media @desktop2{
                 width: 400px;
                 margin: 0 auto;
                 padding: 15px 20px;
             }
-            
-
             text-align: center;
             color: @secondary-color;
             font-size:2.4rem;
 
+            //
             @media @tablet2{
                 font-size:2.9rem;
             }
         }
-
         .images{
+
+            //
             @media @desktop2{
                 max-width: 410px;
                 margin: 0 auto;
             }
-            
-
             display: flex;
-            // border:2px solid red;
-            // align-items: flex-end;
             height:27rem;
-
-            //to uncomment
             width:98%;
             margin:0 auto;  
-        }
+            }
 
-        //to uncomment
+        //
         @media @tablet2{
             margin-bottom: 3rem;
             font-size:2rem;
+                }
         }
-    }
 }
 
-
+//
 .startbtn{
     display:flex;
     justify-content: center;
-    // border:2px solid red;
     margin-top:2rem;
     margin-bottom:10rem;
     button{
@@ -280,17 +268,18 @@
         background-color:lighten(@button-font-color,10%);
         transition: 0.7s ease-in-out;
         color:@primary-color;
-    }} 
+                }
+        } 
 }
 
+//
 .Vbtn{
-
     display:none;
-
+    
+    //
     @media @phone{
     display:flex;
     justify-content: center;
-    // border:2px solid red;
     margin-top:2rem;
     margin-bottom:10rem;
     button{
@@ -304,13 +293,15 @@
         background-color:lighten(@button-font-color,10%);
         transition: 0.7s ease-in-out;
         color:@primary-color;
-    }
+            }
     .fa-angle-down{
         font-size: 5rem;
+                }
+        } 
     }
-} 
+
 }
-}
+
  
 
 

@@ -6,7 +6,11 @@
     align-content: space-around;
     // border: 1px solid red;
 
+    @media @tablet{
+        
+        flex-direction: column;
 
+    }
     @media @phone{
         display:flex;
         flex-direction: column;
@@ -21,7 +25,7 @@
     margin-left: 1%;
     flex-direction: column;
     align-items: center;
-    width: 30%;
+    width: 25%;
     // border: 1px solid yellow;
     padding-top: 8%;
 
@@ -36,6 +40,21 @@
         width: 85%;
         margin-top:15px;
 
+    }
+
+    @media @tablet{
+        width:100%;
+        border-bottom:1px solid @primary-color;
+        border-right: none;
+        margin-bottom:8%;
+        padding: 4%;
+
+        align-content: space-around;
+
+
+        h5{
+            width:60%;
+        }
     }
 
     @media @phone{
@@ -58,8 +77,12 @@
     // height: 30%;
     // border: 1px solid blue;
 
+   @media @tablet{
+       width:90%;
+       justify-content: space-around;
+   }
     @media @phone{
-        flex-direction: column;
+        flex-direction: row;
         width: 98%;
     }
 }
@@ -69,24 +92,36 @@
     width: 22%;
     margin-left: 3%;
     margin-bottom: 5%;
+    // border: 1px solid green;
 
     h3{
         font-size: 1.7rem;
     };
 
+    @media @tablet{
+        width: 40%;
+        h3{
+            font-size: 1.4rem;
+        }
+        margin-bottom:7%;
+        
+    }
+
     @media @phone{
-        width:50%;
+        width:40%;
         margin:0 0 5% 3%;
+        flex-direction: row;
         justify-content: center;
-        border: .4px ridge @secondary-color;
-        border-radius: 4.6%;
+        border: .6px ridge @secondary-color;
+        border-radius: 4.7%;
+        margin-left:2.5%;
 
         h3{
-            font-size: 3rem;
+            font-size: 2rem;
         };
 
         p{
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
         
         
@@ -115,15 +150,22 @@
     font-size: 2rem;
     color: @primary-color;
     text-decoration: none;
-
-    &:hover{
-        color: @secondary-color;
+    
+    .fab{
+        color: @primary-color;
+        font-size: 4rem;
+        &:hover{
+            color: @secondary-color;
+        }
     }
 
+    
     @media @tablet{
         font-size: 1.6rem;
     }
 }
+
+
 
 
 

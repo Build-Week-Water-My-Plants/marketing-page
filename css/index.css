@@ -183,6 +183,9 @@ img {
 header {
   height: 7.1rem;
   display: flex;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
 }
 @media (min-width: 500px) and (max-width:800px) {
   header {
@@ -433,6 +436,11 @@ footer p {
 .words .text {
   margin: 0 0.5rem;
 }
+@media (max-width: 500px) {
+  .words .text {
+    margin: 0 auto;
+  }
+}
 @media (min-width:1200px) {
   .words .text {
     width: calc(100% / 3);
@@ -443,11 +451,6 @@ footer p {
 .words .text img {
   max-width: 100%;
   height: auto;
-}
-@media (max-width: 500px) {
-  .words .text {
-    margin: 0 auto;
-  }
 }
 .words .text h2 {
   text-align: center;
@@ -551,6 +554,11 @@ footer p {
   display: flex;
   align-content: space-around;
 }
+@media (max-width: 800px) {
+  .about-container {
+    flex-direction: column;
+  }
+}
 @media (max-width: 500px) {
   .about-container {
     display: flex;
@@ -563,7 +571,7 @@ footer p {
   margin-left: 1%;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 25%;
   padding-top: 8%;
 }
 .about-description h2 {
@@ -576,6 +584,19 @@ footer p {
   line-height: 3rem;
   width: 85%;
   margin-top: 15px;
+}
+@media (max-width: 800px) {
+  .about-description {
+    width: 100%;
+    border-bottom: 1px solid #FE0760;
+    border-right: none;
+    margin-bottom: 8%;
+    padding: 4%;
+    align-content: space-around;
+  }
+  .about-description h5 {
+    width: 60%;
+  }
 }
 @media (max-width: 500px) {
   .about-description {
@@ -594,9 +615,15 @@ footer p {
   justify-content: center;
   width: 70%;
 }
+@media (max-width: 800px) {
+  .bioContainer {
+    width: 90%;
+    justify-content: space-around;
+  }
+}
 @media (max-width: 500px) {
   .bioContainer {
-    flex-direction: column;
+    flex-direction: row;
     width: 98%;
   }
 }
@@ -609,19 +636,30 @@ footer p {
 .bioCard h3 {
   font-size: 1.7rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .bioCard {
-    width: 50%;
-    margin: 0 0 5% 3%;
-    justify-content: center;
-    border: 0.4px ridge #1A3642;
-    border-radius: 4.6%;
+    width: 40%;
+    margin-bottom: 7%;
   }
   .bioCard h3 {
-    font-size: 3rem;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  .bioCard {
+    width: 40%;
+    margin: 0 0 5% 3%;
+    flex-direction: row;
+    justify-content: center;
+    border: 0.6px ridge #1A3642;
+    border-radius: 4.7%;
+    margin-left: 2.5%;
+  }
+  .bioCard h3 {
+    font-size: 2rem;
   }
   .bioCard p {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 .bio {
@@ -641,7 +679,11 @@ footer p {
   color: #FE0760;
   text-decoration: none;
 }
-.bio a:hover {
+.bio a .fab {
+  color: #FE0760;
+  font-size: 4rem;
+}
+.bio a .fab:hover {
   color: #1A3642;
 }
 @media (max-width: 800px) {
