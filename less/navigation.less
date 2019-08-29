@@ -8,6 +8,7 @@ header {
     @media @500to800 {
         height: 4.2rem;
     }
+
 } // header ends
 
 nav {
@@ -17,17 +18,23 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
-    .aboutNav {
-        @media @375to499 {
-            display: none;
-        }
-    }
 
     @media @375to499{
         width: 100%;
         justify-content: center;    
     }
+
+    .home {
+        @media @over499 {
+            display: none;
+        }
+    }
+
+    .aboutNav {   
+        @media @375to499 {
+            display: none;
+        }
+    } 
 
     a {
         margin: 0 2.5rem;
@@ -35,19 +42,6 @@ nav {
         text-decoration: none;
         font-size: 2.2rem;
         font-weight: 600;
-
-        &:last-child{
-            margin-right: 4rem;
-            color: @primary-color;
-
-            @media @500to800 {
-                margin-right: 2rem;
-            }
-
-            @media @375to499 {
-                color: white;
-            }
-        }
 
         @media @500to800 {
             font-size: 1.4rem;
@@ -59,6 +53,19 @@ nav {
 
             &:hover{
                 color: @primary-color;
+            }
+        }
+
+        &:last-child{
+            margin-right: 4rem;
+            color: @primary-color;
+
+            @media @500to800 {
+                margin-right: 2rem;
+            }
+
+            @media @375to499 {
+                color: white;
             }
         }
 
@@ -85,4 +92,5 @@ nav {
     @media @375to499 {
         display: none;
     }
-} // logo ends
+}
+
