@@ -5,7 +5,7 @@ header {
     top: 0px;
     z-index: 999;
 
-    @media @500to800 {
+    @media @501to800 {
         height: 4.2rem;
     }
 
@@ -19,7 +19,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
 
-    @media @375to499{
+    @media @375to500 {
         width: 100%;
         justify-content: center;    
     }
@@ -31,7 +31,7 @@ nav {
     }
 
     .aboutNav {   
-        @media @375to499 {
+        @media @375to500 {
             display: none;
         }
     } 
@@ -43,13 +43,14 @@ nav {
         font-size: 2.2rem;
         font-weight: 600;
 
-        @media @500to800 {
+        @media @501to800 {
             font-size: 1.4rem;
-            margin: 0 .7rem;
+            margin: 0 1.7rem;
         }
 
-        @media @375to499 {
-            font-size: 2rem;
+        @media @375to500 {
+            font-size: 2.2rem;
+            margin: 2.5rem;
 
             &:hover{
                 color: @primary-color;
@@ -60,11 +61,11 @@ nav {
             margin-right: 4rem;
             color: @primary-color;
 
-            @media @500to800 {
+            @media @501to800 {
                 margin-right: 2rem;
             }
 
-            @media @375to499 {
+            @media @375to500 {
                 color: white;
             }
         }
@@ -83,13 +84,13 @@ nav {
     background: @secondary-color;
     text-decoration: none;
 
-    @media @500to800 {
+    @media @501to800 {
         padding-top: 1rem;;
         padding-left: 1rem;
         font-size: 2.2rem;
     }
 
-    @media @375to499 {
+    @media @375to500 {
         display: none;
     }
 }
