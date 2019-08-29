@@ -637,7 +637,6 @@ footer p {
 .about-description {
   border-right: 2px solid #fe0760;
   display: flex;
-  margin-left: 1%;
   flex-direction: column;
   align-items: center;
   width: 25%;
@@ -646,6 +645,11 @@ footer p {
 .about-description h2 {
   font-size: 4rem;
   font-weight: bold;
+}
+@media (max-width: 1000px) {
+  .about-description h2 {
+    font-size: 3.5rem;
+  }
 }
 .about-description h5 {
   font-size: 2.5rem;
@@ -696,7 +700,7 @@ footer p {
 }
 @media (max-width: 500px) {
   .bioContainer {
-    flex-direction: row;
+    flex-wrap: none;
     width: 98%;
   }
 }
@@ -746,9 +750,14 @@ footer p {
     font-size: 1.6rem;
   }
 }
+@media (max-width: 970px) {
+  .bioCard {
+    width: 28%;
+  }
+}
 @media (max-width: 500px) {
   .bioCard {
-    width: 40%;
+    width: 45%;
     margin: 0 0 5% 3%;
     flex-direction: row;
     justify-content: center;
@@ -760,11 +769,6 @@ footer p {
   .bioCard p {
     font-size: 1.4rem;
     padding-bottom: 5px;
-  }
-}
-@media (max-width: 970px) {
-  .bioCard {
-    width: 28%;
   }
 }
 .bio {
