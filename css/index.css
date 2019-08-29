@@ -3,6 +3,19 @@
   display: flex;
   align-items: flex-end;
 }
+.btnFlexCenter {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+.btnAnimation {
+  background-color: white;
+  color: #fe0760;
+  border: solid #fe0760 2px;
+  transform: translate(0px, -1px);
+  transition-duration: 0.2s;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -147,7 +160,7 @@ h3,
 h4,
 h5 {
   font-family: 'Signika', sans-serif;
-  color: #FE0760;
+  color: #fe0760;
 }
 h1 {
   font-size: 4rem;
@@ -163,7 +176,7 @@ h4 {
 p {
   font-size: 1.4rem;
   padding-bottom: 10px;
-  color: #1A3642;
+  color: #1a3642;
 }
 img {
   max-width: 100%;
@@ -195,7 +208,7 @@ header {
 nav {
   height: 100%;
   width: 50%;
-  background: #1A3642;
+  background: #1a3642;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -234,12 +247,12 @@ nav a {
     font-size: 2rem;
   }
   nav a:hover {
-    color: #FE0760;
+    color: #fe0760;
   }
 }
 nav a:last-child {
   margin-right: 4rem;
-  color: #FE0760;
+  color: #fe0760;
 }
 @media (min-width: 500px) and (max-width:800px) {
   nav a:last-child {
@@ -259,7 +272,7 @@ nav a:last-child {
   color: white;
   font-size: 3.6rem;
   font-weight: bold;
-  background: #1A3642;
+  background: #1a3642;
   text-decoration: none;
 }
 @media (min-width: 500px) and (max-width:800px) {
@@ -279,7 +292,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #1A3642;
+  background: #1a3642;
   width: 100%;
 }
 @media (min-width: 500px) and (max-width:800px) {
@@ -340,7 +353,7 @@ footer p {
 }
 .hero .hero-text-and-image .hero-text h2 {
   font-size: 6.4rem;
-  color: #1A3642;
+  color: #1a3642;
   line-height: 6.5rem;
   margin-top: 2.5%;
 }
@@ -352,20 +365,20 @@ footer p {
   justify-content: center;
   align-items: center;
   height: 60px;
-  border: 4px solid #FE0760;
+  border: 4px solid #fe0760;
   font-size: 1.8rem;
   border-radius: 7px;
   text-decoration: none;
-  color: #FE0760;
+  color: #fe0760;
   font-size: 2.2rem;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   width: 166px;
   border-radius: 10px;
 }
 .hero .btn:hover {
-  background-color: #FE0760;
+  background-color: #fe0760;
   color: white;
-  border: solid #FE0760 4px;
+  border: solid #fe0760 4px;
   transform: translate(0px, -1px);
   transition-duration: 0.2s;
 }
@@ -375,7 +388,7 @@ footer p {
 }
 .hero p a {
   text-decoration: none;
-  color: #32708B;
+  color: #32708b;
 }
 @media (max-width: 1000px) {
   .hero .hero-text-and-image .hero-text {
@@ -389,7 +402,7 @@ footer p {
   }
   .hero .hero-text-and-image .hero-text h2 {
     font-size: 5rem;
-    color: #1A3642;
+    color: #1a3642;
     line-height: 6rem;
     margin-top: 5%;
   }
@@ -424,7 +437,7 @@ footer p {
   }
   .hero .hero-text-and-image .hero-text h2 {
     font-size: 3.6rem;
-    color: #1A3642;
+    color: #1a3642;
     line-height: 4rem;
     margin-top: 2.5%;
   }
@@ -437,7 +450,7 @@ footer p {
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    background-color: #FE0760;
+    background-color: #fe0760;
     height: 50px;
     width: 27%;
     font-size: 1.8rem;
@@ -447,14 +460,14 @@ footer p {
   }
   .hero .btn:hover {
     background-color: #ffffff;
-    color: #FE0760;
-    border: solid #FE0760 1px;
+    color: #fe0760;
+    border: solid #fe0760 1px;
     cursor: pointer;
   }
 }
 #anchor-location {
-  margin-top: 130px;
-  margin-bottom: 100px;
+  margin-top: 13rem;
+  margin-bottom: 10rem;
 }
 @media (max-width: 500px) {
   .empty2 {
@@ -471,7 +484,7 @@ footer p {
     flex-direction: column;
   }
   .words .empty {
-    border: 20px solid #B4D6E4;
+    border: 2rem solid #b4d6e4;
     width: 100%;
     margin-bottom: 4rem;
   }
@@ -492,6 +505,12 @@ footer p {
     margin: 0 auto;
   }
 }
+@media (max-width: 991px) {
+  .words .text {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
+}
 @media (min-width:1200px) {
   .words .text {
     width: calc(100% / 3);
@@ -499,13 +518,9 @@ footer p {
     flex-direction: column;
   }
 }
-.words .text img {
-  max-width: 100%;
-  height: auto;
-}
 .words .text h2 {
   text-align: center;
-  color: #FE0760;
+  color: #fe0760;
 }
 @media (max-width: 991px) {
   .words .text h2 {
@@ -514,7 +529,7 @@ footer p {
 }
 .words .text p {
   text-align: center;
-  color: #1A3642;
+  color: #1a3642;
   font-size: 2.4rem;
 }
 @media (min-width:1200px) {
@@ -529,6 +544,10 @@ footer p {
     font-size: 2.9rem;
   }
 }
+.words .text img {
+  max-width: 100%;
+  height: auto;
+}
 .words .text .images {
   display: flex;
   height: 27rem;
@@ -539,12 +558,6 @@ footer p {
   .words .text .images {
     max-width: 410px;
     margin: 0 auto;
-  }
-}
-@media (max-width: 991px) {
-  .words .text {
-    margin-bottom: 3rem;
-    font-size: 2rem;
   }
 }
 .startbtn {
@@ -559,17 +572,17 @@ footer p {
   border-radius: 1rem;
   text-decoration: none;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  background-color: #FE0760;
+  background-color: #fe0760;
   font-size: 1.8rem;
   color: white;
   text-align: center;
   cursor: pointer;
-  border: 4px solid #FE0760;
+  border: 4px solid #fe0760;
 }
 .startbtn button:hover {
   background-color: white;
-  color: #FE0760;
-  border: solid #FE0760 2px;
+  color: #fe0760;
+  border: solid #fe0760 2px;
   transform: translate(0px, -1px);
   transition-duration: 0.2s;
 }
@@ -589,15 +602,15 @@ footer p {
     border-radius: 0.9rem;
     text-decoration: none;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    background-color: #FE0760;
+    background-color: #fe0760;
     font-size: 1.8rem;
     color: white;
     text-align: center;
   }
   .Vbtn button:hover {
     background-color: white;
-    color: #FE0760;
-    border: solid #FE0760 2px;
+    color: #fe0760;
+    border: solid #fe0760 2px;
     transform: translate(0px, -1px);
     transition-duration: 0.2s;
   }
@@ -622,7 +635,7 @@ footer p {
   }
 }
 .about-description {
-  border-right: 2px solid #FE0760;
+  border-right: 2px solid #fe0760;
   display: flex;
   margin-left: 1%;
   flex-direction: column;
@@ -636,7 +649,7 @@ footer p {
 }
 .about-description h5 {
   font-size: 2.5rem;
-  color: #1A3642;
+  color: #1a3642;
   line-height: 3rem;
   width: 85%;
   margin-top: 15px;
@@ -644,7 +657,7 @@ footer p {
 @media (max-width: 800px) {
   .about-description {
     width: 100%;
-    border-bottom: 1px solid #FE0760;
+    border-bottom: 1px solid #fe0760;
     border-right: none;
     margin-bottom: 8%;
     padding: 4%;
@@ -658,7 +671,7 @@ footer p {
   .about-description {
     width: 98%;
     border-right: none;
-    border-bottom: 2px solid #FE0760;
+    border-bottom: 2px solid #fe0760;
     margin-bottom: 5%;
     padding-bottom: 5%;
   }
@@ -768,15 +781,15 @@ footer p {
 }
 .bio a {
   font-size: 2rem;
-  color: #FE0760;
+  color: #fe0760;
   text-decoration: none;
 }
 .bio a .fab {
-  color: #FE0760;
+  color: #fe0760;
   font-size: 4rem;
 }
 .bio a .fab:hover {
-  color: #1A3642;
+  color: #1a3642;
 }
 @media (max-width: 800px) {
   .bio a .fab {
