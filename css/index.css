@@ -200,6 +200,17 @@ nav {
   justify-content: flex-end;
   align-items: center;
 }
+@media (min-width: 375px) and (max-width: 499px) {
+  nav .aboutNav {
+    display: none;
+  }
+}
+@media (min-width: 375px) and (max-width: 499px) {
+  nav {
+    width: 100%;
+    justify-content: center;
+  }
+}
 nav a {
   margin: 0 2.5rem;
   color: white;
@@ -216,10 +227,23 @@ nav a:last-child {
     margin-right: 2rem;
   }
 }
+@media (min-width: 375px) and (max-width: 499px) {
+  nav a:last-child {
+    color: white;
+  }
+}
 @media (min-width: 500px) and (max-width:800px) {
   nav a {
     font-size: 1.4rem;
     margin: 0 0.7rem;
+  }
+}
+@media (min-width: 375px) and (max-width: 499px) {
+  nav a {
+    font-size: 2rem;
+  }
+  nav a:hover {
+    color: #FE0760;
   }
 }
 .logo {
@@ -240,6 +264,11 @@ nav a:last-child {
     font-size: 2.2rem;
   }
 }
+@media (min-width: 375px) and (max-width: 499px) {
+  .logo {
+    display: none;
+  }
+}
 footer {
   height: 6.2rem;
   display: flex;
@@ -253,12 +282,22 @@ footer {
     height: 3.65rem;
   }
 }
+@media (min-width: 375px) and (max-width: 499px) {
+  footer {
+    height: 3.65rem;
+  }
+}
 footer p {
   color: white;
   padding: 0;
   font-size: 2.5rem;
 }
 @media (min-width: 500px) and (max-width:800px) {
+  footer p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 375px) and (max-width: 499px) {
   footer p {
     font-size: 1.5rem;
   }
@@ -345,6 +384,9 @@ footer p {
     color: #1A3642;
     line-height: 6rem;
     margin-top: 5%;
+  }
+  .hero .hero-text-and-image img {
+    border: 1px solid red;
   }
   .hero .btn {
     width: 166px;
@@ -547,6 +589,7 @@ footer p {
   }
   .Vbtn button .fa-angle-down {
     font-size: 5rem;
+    margin-bottom: 10px;
   }
 }
 .about-container {
@@ -615,6 +658,10 @@ footer p {
   justify-content: center;
   width: 70%;
 }
+.bioContainer .bioCard .bio-image img {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
 @media (max-width: 800px) {
   .bioContainer {
     width: 90%;
@@ -633,8 +680,12 @@ footer p {
   margin-left: 3%;
   margin-bottom: 5%;
 }
+.bioCard .bio-image img {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
 .bioCard h3 {
-  font-size: 1.7rem;
+  font-size: 2.4rem;
 }
 @media (max-width: 800px) {
   .bioCard {

@@ -18,6 +18,17 @@ nav {
     justify-content: flex-end;
     align-items: center;
     
+    .aboutNav {
+        @media @375to499 {
+            display: none;
+        }
+    }
+
+    @media @375to499{
+        width: 100%;
+        justify-content: center;    
+    }
+
     a {
         margin: 0 2.5rem;
         color: white;
@@ -32,12 +43,25 @@ nav {
             @media @500to800 {
                 margin-right: 2rem;
             }
+
+            @media @375to499 {
+                color: white;
+            }
         }
 
         @media @500to800 {
             font-size: 1.4rem;
             margin: 0 .7rem;
         }
+
+        @media @375to499 {
+            font-size: 2rem;
+
+            &:hover{
+                color: @primary-color;
+            }
+        }
+
     }  // a selector ends
 } // nav ends
 
@@ -56,5 +80,9 @@ nav {
         padding-top: 1rem;;
         padding-left: 1rem;
         font-size: 2.2rem;
+    }
+
+    @media @375to499 {
+        display: none;
     }
 } // logo ends
