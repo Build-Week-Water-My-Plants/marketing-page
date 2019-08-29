@@ -365,6 +365,9 @@ footer p {
 .hero .btn:hover {
   background-color: #FE0760;
   color: white;
+  border: solid #FE0760 4px;
+  transform: translate(0px, -1px);
+  transition-duration: 0.2s;
 }
 .hero p {
   font-size: 1.4rem;
@@ -560,6 +563,7 @@ footer p {
   color: white;
   text-align: center;
   cursor: pointer;
+  border: 4px solid #FE0760;
 }
 .startbtn button:hover {
   background-color: white;
