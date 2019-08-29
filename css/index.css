@@ -393,9 +393,6 @@ footer p {
     line-height: 6rem;
     margin-top: 5%;
   }
-  .hero .hero-text-and-image img {
-    border: 1px solid red;
-  }
   .hero .btn {
     width: 166px;
   }
@@ -454,6 +451,10 @@ footer p {
     border: solid #FE0760 1px;
     cursor: pointer;
   }
+}
+#anchor-location {
+  margin-top: 130px;
+  margin-bottom: 100px;
 }
 @media (max-width: 500px) {
   .empty2 {
