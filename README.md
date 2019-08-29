@@ -3,7 +3,7 @@ You need water. You need sunlight. Your plants are basically you with less compl
 
 
 # Our Process
-With four UI Developers, we split work according to sections on the landing page designed by our UX Designer, as well as the team bio page designed by us. We utilized Less, HTMl, CSS to build and style our pages.
+With four UI Developers, we split work according to sections on the landing page designed by our UX Designer, as well as the team bio page designed by us. We utilized Less, HTML, and CSS to build and style our pages.
 
 
 # Team Members
@@ -15,7 +15,7 @@ With four UI Developers, we split work according to sections on the landing page
     - Responsive Team Bio page
 
 • Len Winkler
-    - Responsive header and footer
+    - Responsive header/nav and footer
 
 • Meera Andersen
     - Responsive Hero on Landing Page, Designed Team Bio page and polished elements on Bio page as well as buttons.
