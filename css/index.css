@@ -239,13 +239,13 @@ nav a {
 @media (min-width: 501px) and (max-width:800px) {
   nav a {
     font-size: 1.4rem;
-    margin: 0 0.7rem;
+    margin: 0 1.7rem;
   }
 }
 @media (min-width: 375px) and (max-width: 500px) {
   nav a {
-    font-size: 2rem;
-    margin: 0 3.3rem;
+    font-size: 2.2rem;
+    margin: 2.5rem;
   }
   nav a:hover {
     color: #fe0760;
@@ -255,7 +255,7 @@ nav a:last-child {
   margin-right: 4rem;
   color: #fe0760;
 }
-@media (min-width: 500px) and (max-width:800px) {
+@media (min-width: 501px) and (max-width:800px) {
   nav a:last-child {
     margin-right: 2rem;
   }
@@ -276,7 +276,7 @@ nav a:last-child {
   background: #1a3642;
   text-decoration: none;
 }
-@media (min-width: 500px) and (max-width:800px) {
+@media (min-width: 501px) and (max-width:800px) {
   .logo {
     padding-top: 1rem;
     padding-left: 1rem;
@@ -296,7 +296,7 @@ footer {
   background: #1a3642;
   width: 100%;
 }
-@media (min-width: 500px) and (max-width:800px) {
+@media (min-width: 501px) and (max-width:800px) {
   footer {
     height: 3.65rem;
   }
@@ -311,7 +311,7 @@ footer p {
   padding: 0;
   font-size: 2.5rem;
 }
-@media (min-width: 500px) and (max-width:800px) {
+@media (min-width: 501px) and (max-width:800px) {
   footer p {
     font-size: 1.5rem;
   }
@@ -587,20 +587,17 @@ footer p {
   transform: translate(0px, -1px);
   transition-duration: 0.2s;
 }
-.Vbtn1,
-.Vbtn2 {
+.Vbtn {
   display: none;
 }
 @media (max-width: 500px) {
-  .Vbtn1,
-  .Vbtn2 {
+  .Vbtn {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 10rem;
   }
-  .Vbtn1 button,
-  .Vbtn2 button {
+  .Vbtn button {
     height: 4.3rem;
     width: 19.9rem;
     border-radius: 0.9rem;
@@ -610,17 +607,16 @@ footer p {
     font-size: 1.8rem;
     color: white;
     text-align: center;
+    cursor: pointer;
   }
-  .Vbtn1 button:hover,
-  .Vbtn2 button:hover {
+  .Vbtn button:hover {
     background-color: white;
     color: #fe0760;
     border: solid #fe0760 2px;
     transform: translate(0px, -1px);
     transition-duration: 0.2s;
   }
-  .Vbtn1 button .fa-angle-down,
-  .Vbtn2 button .fa-angle-down {
+  .Vbtn button .fa-angle-down {
     font-size: 4rem;
   }
 }
